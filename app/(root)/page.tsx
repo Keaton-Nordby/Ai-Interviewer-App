@@ -1,8 +1,9 @@
 import React from 'react'
+import { ReactNode } from 'react'
 
 function page() {
   return (
-    <div>Page</div>
+    <div>Homepage</div>
   )
 }
 
