@@ -64,4 +64,4 @@ import Image from "next/image";
          </>
      )
  }
- export default Agent
+ export default Agent;
