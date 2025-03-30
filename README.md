@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Interviewer App (PrepPal)
+LINK : ai-interviewer-cj3m3o55q-keaton-nordbys-projects.vercel.app
 
-## Getting Started
+## Description
 
-First, run the development server:
+The AI Interviewer App is an innovative platform that allows users to prepare for tech job interviews. By using artificial intelligence, the app customizes interview questions based on the user's input and provides feedback based on the answers given. This application is designed to help users prepare for tech roles by simulating real interview scenarios.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Key Features:
+- **User Authentication**: Sign in and create an account.
+- **Interview Preparation**: Users can specify the job role they want to specialize in.
+- **AI-Generated Questions**: Based on the user's input, AI generates relevant interview questions.
+- **Feedback Generation**: The app generates personalized feedback based on the answers provided by the user during the interview.
+- **Voice Integration**: Users can interact with the AI interviewer using voice commands, powered by VAPI (Voice API).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: 
+  - **React.js**: Used for building the user interface.
+  - **TypeScript**: For type safety and better development experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Backend**: 
+  - **Node.js**: Server-side runtime environment for handling API requests and user interactions.
+  - **Express**: Framework for creating the backend routes and handling HTTP requests.
 
-## Learn More
+- **Database**: 
+  - **Firestore**: NoSQL database for storing user data and interview-related information.
 
-To learn more about Next.js, take a look at the following resources:
+- **APIs**:
+  - **VAPI (Voice API)**: For enabling voice interaction with the AI interviewer.
+  - **Gemini**: Used for making API calls and processing user inputs related to the interview.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features Overview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **User Authentication**:
+   - Users can create an account and sign in to their profiles.
+   - Authentication is handled through Firebase Authentication.
 
-## Deploy on Vercel
+2. **Interview Setup**:
+   - After logging in, users can specify the tech job role they want to be specialized in (e.g., Software Engineer, Data Scientist, etc.).
+   - The AI analyzes this input to generate relevant questions tailored to that role.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **AI-Generated Questions**:
+   - Using the Gemini API, the app generates a series of interview questions based on the user’s job role.
+   - The AI provides dynamic questions, adjusting based on user input during the session.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Take the Interview**:
+   - Users can answer the generated questions one by one.
+   - The interview questions are designed to simulate a real interview experience, allowing users to improve their responses.
+
+5. **AI Feedback**:
+   - After completing the interview, the app analyzes the user's answers and generates detailed feedback, focusing on areas for improvement.
+
+6. **Voice Interaction**:
+   - Users can opt to interact with the AI via voice, powered by VAPI, making the interview process more interactive and realistic.
+
+## Setup and Installation
+
+### Prerequisites
+- Node.js (>= 14.x.x)
+- Firebase account (for Firestore and Authentication)
+- VAPI account (for voice integration)
+- Gemini API credentials (for AI question generation)
