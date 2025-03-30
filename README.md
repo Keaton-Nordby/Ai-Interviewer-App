@@ -1,5 +1,5 @@
 # AI Interviewer App (PrepPal)
-LINK : ai-interviewer-cj3m3o55q-keaton-nordbys-projects.vercel.app
+LINK : ai-interviewer-is1vpmrxa-keaton-nordbys-projects.vercel.app
 
 ## Description
 
