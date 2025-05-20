@@ -49,6 +49,8 @@
 
 ---
 
+Help was provided by JS mastery with giving code snippets as well as the figma design
+
 ## ⚙️ Setup & Installation
 
 ### 📋 Prerequisites
